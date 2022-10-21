@@ -194,7 +194,7 @@
 
     // ButtonCがクリックされた時の処理
     function btnCClick(e) {
-      alarm();
+      //alarm();
       active = false;
       period = 60 * parseInt($("#minute").val()) + parseInt($("#second").val());
       $("#time").html("経過時間： 0");
@@ -212,6 +212,21 @@
         if (rest <= 0) {
           active = false;
           alarm();
+        }
+        if(rest == 5){
+            alarm();
+        }
+        if(rest == 4){
+            alarm();
+        }
+        if(rest == 3){
+            alarm();
+        }
+        if(rest == 2){
+            alarm();
+        }
+        if(rest == 1){
+            alarm();
         }
       }
     }
